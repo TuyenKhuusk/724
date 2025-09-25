@@ -47,6 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Lưu tài khoản vào localStorage
         saveAccount({ name, email, password });
+        // Lưu tên người dùng vào sessionStorage trước khi chuyển hướng
+        sessionStorage.setItem('userName', name);
         alert(`Chào mừng ${name}! Bạn đã đăng ký thành công. Bây giờ bạn có thể đăng nhập.`);
         
         // Chuyển sang form đăng nhập sau khi đăng ký thành công
