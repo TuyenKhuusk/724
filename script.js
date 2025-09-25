@@ -50,11 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Lưu tên người dùng vào sessionStorage trước khi chuyển hướng
         sessionStorage.setItem('userName', name);
         alert(`Chào mừng ${name}! Bạn đã đăng ký thành công. Bây giờ bạn có thể đăng nhập.`);
-        
+
+        window.location.href = 'welcome.html';
         // Chuyển sang form đăng nhập sau khi đăng ký thành công
-        registrationFormContainer.style.display = 'none';
-        loginFormContainer.style.display = 'block';
-        registrationForm.reset();
+        //registrationFormContainer.style.display = 'none';
+        //loginFormContainer.style.display = 'block';
+        //registrationForm.reset();
     });
 
     // Xử lý đăng nhập
